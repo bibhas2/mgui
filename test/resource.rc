@@ -1,0 +1,52 @@
+#include <windows.h>
+#include "resource.h"
+
+MainMenu MENU DISCARDABLE
+BEGIN
+     POPUP "&File"
+     BEGIN
+         MENUITEM "&Open...", _OPEN
+         MENUITEM "&Save...", _SAVE
+         MENUITEM SEPARATOR
+         MENUITEM "E&xit", _EXIT
+     END
+     POPUP "&Edit"
+     BEGIN
+         MENUITEM "Cut", _DELETE
+         MENUITEM "Copy", _COPY
+         MENUITEM "Paste", _PASTE
+     END
+
+     POPUP "&Tools"
+     BEGIN
+         POPUP "New"
+         BEGIN
+		 MENUITEM "&Label", ID_NEW_LABEL
+		 MENUITEM "&Pushbutton", ID_NEW_BUTTON
+		 MENUITEM "&List Box", ID_NEW_LISTBOX
+		 MENUITEM "&Edit", ID_NEW_EDIT
+		 MENUITEM "&Multiline Edit", ID_NEW_EDIT_MULTI
+		 MENUITEM "&Check Box", ID_NEW_CHECKBOX
+		 MENUITEM "&Radio button", ID_NEW_RADIO
+		 MENUITEM "Combo box", ID_NEW_COMBO
+         END
+         MENUITEM "&Select", _SELECT
+         MENUITEM SEPARATOR
+         MENUITEM "&Properties...", _PROPERTIES
+     END
+END
+
+PropertyDialog DIALOG 6, 18, 82, 80
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Control Settings"
+BEGIN
+//List of controls
+    LTEXT    "Control ID:", 0, 5, 2, 47, 7
+    EDITTEXT ID_CONTROL_ID, 5, 10, 72, 10, ES_AUTOHSCROLL
+    LTEXT    "Text:", 0, 5, 22, 47, 10
+    EDITTEXT ID_CONTROL_TEXT, 5, 32, 72, 10, ES_AUTOHSCROLL
+    LTEXT    "Control Type:", 0, 5, 45, 47, 7
+    COMBOBOX ID_CONTROL_TYPE, 5, 52, 72, 70, CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "OK", IDOK, 17, 65, 37, 10
+END
+

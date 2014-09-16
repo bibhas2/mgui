@@ -1,0 +1,23 @@
+#define _OPEN 1
+#define _SAVE 2
+#define _EXIT 3
+#define _PROPERTIES 4
+#define _DELETE 5
+#define _NEW 6
+#define _SELECT 7
+#define _TOOLBOX 8
+#define _COPY 9
+#define _PASTE 10
+#define _CUT 11
+
+#define ID_CONTROL_TEXT 10001
+#define ID_CONTROL_ID 10002
+#define ID_CONTROL_TYPE 10003
+#define ID_NEW_LABEL 10004
+#define ID_NEW_EDIT 10005
+#define ID_NEW_LISTBOX 10006
+#define ID_NEW_BUTTON 10007
+#define ID_NEW_EDIT_MULTI 10008
+#define ID_NEW_CHECKBOX 10009
+#define ID_NEW_RADIO 10010
+#define ID_NEW_COMBO 10011

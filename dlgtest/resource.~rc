@@ -1,0 +1,17 @@
+/* Wedit generated resource file */
+#include <windows.h>
+#include "c:\src\mgui\dlgtest\resource.h"
+
+
+TEST_DIALOG DIALOG 6, 18, 186, 88
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Test dialog"
+FONT 8, "Helv"
+BEGIN
+    PUSHBUTTON      "OK", IDOK, 88, 66, 40, 14
+    PUSHBUTTON      "Cancel", IDCANCEL, 136, 66, 40, 14
+    LTEXT           "Enter something here:", 102, 6, 6, 100, 10
+    EDITTEXT        103, 6, 18, 171, 12, ES_AUTOHSCROLL
+    LTEXT           "Enter something else:", 104, 6, 36, 131, 10
+    EDITTEXT        105, 6, 48, 170, 12, ES_AUTOHSCROLL
+END
