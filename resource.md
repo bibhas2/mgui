@@ -1,11 +1,13 @@
 ##Guide to Developing Windows Resource Files
 
-1. The resource file should be compiled as:
+1. A resource file should be compiled as:
+```
 	windres -i resource.rc -o resource.o
+```
 
 2. The resource file must include windows.h.
 
-3. Basic dialog:
+3. Creating a basic dialog:
 
 ```
 MyDialog DIALOG 6, 18, 180, 180
