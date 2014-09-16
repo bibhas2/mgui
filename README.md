@@ -1,5 +1,5 @@
 ##Overview
-MGUI is a C++ libarry that wraps over low level Windows GUI API. The library is minimal
+MGUI is a C++ library that wraps over low level Windows GUI API. The library is minimal
 and not cross platform. It's purpose is to provide a way to quickly
 create Windows GUI apps using the MingW system and without using Visual C++.
 
