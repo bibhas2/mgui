@@ -9,16 +9,8 @@ If you need cross platform support, there are better options like
 Qt.
 
 ###Build Instructions
-1. Open mingw/include/commctrl.h and enable the definition of
-_WIN23_IE as shown below:
 
-```
-#if 1
-#define _WIN32_IE	0x0300
-#endif
-```
-
-2. Need link your application code with the following libraries:
+Need to link your application code with the following libraries:
 
 ```
 -lmgui -lcomctl32 -lgdi32 -lcomdlg32
