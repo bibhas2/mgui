@@ -1,4 +1,4 @@
-##Guide to Developing Windows Resource Files
+## Guide to Developing Windows Resource Files
 
 1. A resource file should be compiled as:
 ```
