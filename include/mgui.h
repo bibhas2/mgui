@@ -74,6 +74,11 @@ void getText(string& str) {
 	int64_t len = getTextLength();
 
 	str.resize(len);
+
+	//The requested text length must include the null termination character.
+	//Hence, we add 1 to len. The str.data() buffer always has one extra byte
+	//more than string::size() for the `\0` so it is OK for Win32 to write the 
+	//null byte at the end.
 	SendMessage(m_wnd, WM_GETTEXT, (WPARAM) len + 1, (LPARAM) str.data());
 }
 
